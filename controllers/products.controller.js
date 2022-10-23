@@ -1,14 +1,14 @@
 const path = require("path");
 const products = require("../models/products.model");
 exports.getProducts = (req, res) => {
-  res.sendFile(path.join(__dirname + "/../views/product.html"));
+  res.sendFile(path.join(__dirname + "/../views/products.html"));
 };
 exports.savedProducts = (req, res) => {
   const name = req.body.name;
   const price = req.body.age;
   const product = {
     name,
-    age,
+    price,
   };
   products.push(product);
   res.send(products);
