@@ -1,0 +1,1 @@
+- This is a MVC pattern mini project using Node and Express js

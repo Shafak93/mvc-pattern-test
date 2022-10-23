@@ -7,8 +7,8 @@ const productsRouter = require("./routes/products.route");
 app.use(express.urlencoded({ extended: true }));
 app.use(userRouter);
 app.use(productsRouter);
-app.get("/user", (req, res) => {
-  res.send("Assalamu alikum bro. Welcome to the world");
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
 });
 app.use((req, res) => {
   res.status(404).json({
