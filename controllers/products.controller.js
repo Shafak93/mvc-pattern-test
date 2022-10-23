@@ -5,7 +5,7 @@ exports.getProducts = (req, res) => {
 };
 exports.savedProducts = (req, res) => {
   const name = req.body.name;
-  const price = req.body.age;
+  const price = req.body.price;
   const product = {
     name,
     price,
